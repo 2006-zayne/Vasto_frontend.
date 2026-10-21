@@ -36,3 +36,5 @@ Vasto is a React web application built with Vite.
 - `npm run build` — create a production build in `dist/`.
 - `npm run preview` — preview the production build locally.
 - `npm run lint` — run Oxlint.
+# Vasto_frontend.
+The Frontend repo for Vasto.
