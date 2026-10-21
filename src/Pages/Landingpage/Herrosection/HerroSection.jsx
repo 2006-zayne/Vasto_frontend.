@@ -2,8 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Buttons from '../../../components/buttonsCommponent/Buttons'
 import img from '../../../assets/Tilted_VASTO_App_Smartphone_Mockup-removebg-preview.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
 import './Herro.css'
 
 function Text(){
