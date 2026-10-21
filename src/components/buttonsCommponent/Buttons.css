@@ -1,0 +1,24 @@
+/*----------------
+-----link-btn-----
+------------------*/
+.MainBtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5cm;
+  text-decoration: none;
+  font-size: medium;
+  background-color: rgba(255, 255, 255, 0.842);
+  padding: 10px;
+  border-radius: 50px;
+  color: rgb(4, 4, 33);
+  border: 1px solid rgba(128, 128, 128, 0.321);
+  transition: all ease-in-out 0.40s;
+}
+.MainBtn:hover{
+  background:linear-gradient(30deg, rgba(37, 1, 135, 0.467), rgba(1, 1, 176, 0.473), rgba(0, 85, 255, 0.463));
+  transform: translateY(-5px);
+  color: #ffffff;
+  transition: all ease-in-out 0.40s;
+}

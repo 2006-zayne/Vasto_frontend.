@@ -1,0 +1,124 @@
+/*-----------------------
+-------------------------
+----MOBILE NAVEBAR ------
+------------------------*/
+.mobile-nav {
+  color: var(--text);
+  background: rgba(2, 2, 26, 0.451);
+  box-shadow: 0px 5px 5px rgba(38, 43, 63, 0.236);
+}
+.mobile-nav-icon{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    backdrop-filter: blur(3px);
+    z-index: 22;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
+}
+.nav-icon {
+  font-size: 1.5rem;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: var(--nav-bg-sld);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  gap: 20%;
+}
+.links{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 10%;
+    padding: 0px 4rem;
+}
+.link{
+    font-family: var(--mono);
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--text-h);
+}
+
+/*-----------------------
+-------------------------
+----DESKTOP NAVEBAR ------
+------------------------*/
+.desktop-nav{
+    position: fixed;
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+}
+.desktop-nav-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 4em;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.065);
+  box-shadow:inset 0px 0px 5px 1px var(--new-shadow);
+  backdrop-filter: blur(3px);
+}
+
+.desktop-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.desktop-logo img{
+  height: 3em;
+  width: 3em;
+}
+.desktop-link{
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media (min-width: 1290px){
+  .desktop-link{
+    width: 50%;
+    justify-content: flex-end;
+    gap: 1cm;
+  }
+  .desktop-nav-icon{
+    width: 50%;
+  }
+}
