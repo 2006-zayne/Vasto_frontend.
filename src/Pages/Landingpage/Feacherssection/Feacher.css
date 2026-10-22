@@ -46,7 +46,7 @@
 .header-container,
 .img-two-container,
 .paragraph-container{
-    height: 70dvh;
+    height: 80dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,4 +66,33 @@
 }
 .phone--img{
     position: absolute;
+}
+
+/*---------------------
+----MOBILE FEATURE ----
+-----------------------*/
+.feacher-mobile-container{
+    height: 50dvh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.header-container-mobile h2{
+    font-weight: bolder;
+    font-size: clamp(2rem, 7vw, 10rem);
+    line-height: 60px;
+    text-align: center;
+}
+.paragraph-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.paragraph-container-mobile p{
+    text-align: center;
 }

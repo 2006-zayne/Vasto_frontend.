@@ -22,6 +22,7 @@ function FeacherLogo(){
 
 function FeacherContent(){
     const DesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+    const MobileOrTablet = useMediaQuery({ query: '(max-width: 1224px)' });
 
     function Desktop(){
         const container = useRef(null)
@@ -71,9 +72,36 @@ function FeacherContent(){
         )
     }
 
+    function Mobile(){
+        return(
+            <>
+            <div className="feacher-mobile-container">
+                <div className="header-container-mobile">
+                    <h2>BE PART OF SOME THING AMAIZING AND START EXPLORING</h2>
+                </div>
+                <div className="paragraph-container-mobile">
+                    <p>
+                        <span>Social feed:</span> (posts)Create text posts, image posts 
+                        (with automatic thumbnail generation and WebP conversion), 
+                        video posts (with HLS transcoding for mobile streaming), 
+                        and link posts. <br />
+                        <span>Groups:</span> Join open groups, request to join 
+                        approval-based groups, or receive invitations to invite-only groups. <br />
+                        <span>Messaging: </span>Direct 1:1 and group conversations with real-time delivery over WebSockets. <br />
+                    </p>
+                    <Link to="/features" className="features-link">
+                        <Buttons name="Learn more" type="link-btn"/>
+                    </Link>
+                </div>
+            </div>
+            </>
+        )
+    }
+
     return(
         <>
         {DesktopOrLaptop && <Desktop/>}
+        {MobileOrTablet && <Mobile/>}
         </>
     )
 }

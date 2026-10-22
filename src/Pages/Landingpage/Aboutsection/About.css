@@ -17,7 +17,7 @@
 }
 .text-about-container p{
     text-align: center;
-    font-size: clamp(1.5rem, 9vw, 3rem);
+    font-size: clamp(0.5rem, 7vw, 3rem);
     font-weight: bolder;
     word-spacing: 5px;
     line-height: 1.3;
