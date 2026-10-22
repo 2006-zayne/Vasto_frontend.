@@ -41,11 +41,12 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    overflow-y: visible;
 }
 .header-container,
-.img-container,
+.img-two-container,
 .paragraph-container{
-    height: 100%;
+    height: 70dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,4 +63,7 @@
 }
 .features-link{
     text-decoration: none;
+}
+.phone--img{
+    position: absolute;
 }

@@ -24,4 +24,6 @@
 }
 .about-link{
     text-decoration: none;
+    position: relative;
+    z-index: 5;
 }

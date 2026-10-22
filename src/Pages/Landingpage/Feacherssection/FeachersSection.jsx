@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 import Buttons from "../../../components/buttonsCommponent/Buttons";
 import img from '../../../assets/vasto_phone_mockup-removebg-preview.png'
 import { useMediaQuery } from "react-responsive";
-import gsap from "gsap/all";
+import gsap from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
 import './Feacher.css'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function FeacherLogo(){
     return(
@@ -20,14 +24,32 @@ function FeacherContent(){
     const DesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
     function Desktop(){
+        const container = useRef(null)
+
+        useGSAP(()=>{
+            gsap.from(".phone--img",
+                {
+                    y:-430,
+                    scrollTrigger:{
+                        trigger:".phone--img",
+                        start:"top 1%",
+                        end:"top -50%",
+                        scrub:1,
+                        markers:true
+                    }
+                }
+            )
+
+        },{scope:container})
+        
 
         return(
             <>
-            <div className="feacher--container">
+            <div ref={container} className="feacher--container">
                 <div className="header-container">
                     <h2>BE PART OF SOME THING AMAIZING AND START EXPLORING</h2>
                 </div>
-                <div className="img-container">
+                <div  className="img-two-container">
                     <img src={img} alt="img-phonr" className="phone--img" srcset="" />
                 </div>
                 <div className="paragraph-container">
