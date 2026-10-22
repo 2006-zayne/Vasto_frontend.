@@ -1,0 +1,65 @@
+.feachers--section{
+    height: 100dvh;
+    width: 100%;
+}
+.feachers--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3cm;
+}
+.feacher-logo{
+    width: 100%;
+    
+}
+.feacher-logo h1{
+    font-weight: bolder;
+    font-size: clamp(4rem, 15vw, 30rem);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.feacher-logo h1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff24;
+    backdrop-filter: blur(2px);
+}
+.feacher-logo h1 span{
+    position: relative;
+    z-index: 2;
+}
+.feacher--container{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.header-container,
+.img-container,
+.paragraph-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-container h2{
+    font-weight: bolder;
+    font-size: clamp(2rem, 3vw, 10rem);
+    line-height: 60px;
+}
+.paragraph-container p span{
+    font-weight: bold;
+}
+.features-link{
+    text-decoration: none;
+}

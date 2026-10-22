@@ -50,7 +50,7 @@ function MobileNav(){
                 <div className="links">
                     <Link className='link' to='/'>Home</Link>
                     <Link className='link' to='/about'> About</Link>
-                    <Link className='link' to='/contact'>Contact</Link>
+                    <Link className='link' to='/features'>Features</Link>
                 </div>
             </div>
         </nav>
@@ -75,8 +75,8 @@ function DesktopNav(){
                     <Link className='link desktop--link' to='/about'>
                         <Buttons name="About" type="link-btn"/>
                     </Link>
-                    <Link className='link desktop--link' to='/contact'>
-                        <Buttons name="Feachers" type="link-btn"/>
+                    <Link className='link desktop--link' to='/features'>
+                        <Buttons name="Features" type="link-btn"/>
                     </Link>
                 </div>
             </div>
