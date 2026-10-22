@@ -1,10 +1,9 @@
-import React from "react";
+import {React, useRef} from "react";
 import { Link } from "react-router-dom";
 import Buttons from "../../../components/buttonsCommponent/Buttons";
 import img from '../../../assets/vasto_phone_mockup-removebg-preview.png'
 import { useMediaQuery } from "react-responsive";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/src/ScrollTrigger";
+import gsap from "gsap/all";
 import './Feacher.css'
 
 function FeacherLogo(){
@@ -21,15 +20,6 @@ function FeacherContent(){
     const DesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
     function Desktop(){
-        document.addEventListener('DOMContentLoaded',function(){
-            gsap.registerPlugin(ScrollTrigger)
-
-            gsap.from(".phone--img", {
-                opacity:0,
-                y:-75,
-                
-            });
-        })
 
         return(
             <>
@@ -67,6 +57,7 @@ function FeacherContent(){
 }
 
 function FeachersSection(){
+
     return(
         <>
         <section className="feachers--section">
