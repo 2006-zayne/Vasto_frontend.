@@ -35,7 +35,7 @@ function FeacherContent(){
                         start:"top 1%",
                         end:"top -50%",
                         scrub:1,
-                        markers:true
+                        markers:false
                     }
                 }
             )
