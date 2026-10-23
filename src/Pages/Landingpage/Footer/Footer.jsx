@@ -12,7 +12,7 @@ function FooterSection(){
             <section className="footer--section">
                 <div className="footer-content-container">
                     <div className="footer-logo">
-                        <h2 className="Dskt-logo-footer">VASTO</h2>
+                        <h1 className="dskt-logo-footer">VASTO</h1>
                         <p>community, learning-resource, opotunity, growth and platform for students</p>
                     </div>
                     <div className="contact-section">
