@@ -1,5 +1,6 @@
-import Landingpage from './Pages/Landingpage/Landingpage'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Landingpage from './Pages/Landingpage/Landingpage'
+import AboutPage from './Pages/Aboutpage/Aboutpage'
 
 function App() {
   
@@ -9,6 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Landingpage />} />
+          <Route path='/about' element={<AboutPage/>}/>
         </Routes>
       </BrowserRouter>
     </>

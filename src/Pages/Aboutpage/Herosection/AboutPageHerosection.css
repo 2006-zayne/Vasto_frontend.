@@ -1,0 +1,26 @@
+.about-page-hero-section{
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-page-hero-container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10.5em;
+}
+.about-page-hero-container h1{
+    font-size: clamp(6rem, 10vw, 30rem);
+}
+.about-page-hero-container h2{
+    font-size: clamp(8rem, 20vw, 40rem);
+    font-weight: 800;
+}
+.about-page-hero-container p{
+    font-size: clamp(2rem, 5vw, 4rem);
+}
