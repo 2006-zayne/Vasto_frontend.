@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import img from '../../../assets/vasto-transparent.png'
+import img from '../../assets/vasto-transparent.png'
 import Buttons from '../buttonsCommponent/Buttons'
 import {useMediaQuery} from 'react-responsive'
 import gsap from 'gsap'
