@@ -12,7 +12,9 @@
     grid-template-columns: 65% 45%;
 }
 .img-gallery-container{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     width: 90%;
 }
