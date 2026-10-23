@@ -4,6 +4,7 @@ import HerroSection from './Herrosection/HerroSection'
 import AboutSection from './Aboutsection/AboutSection'
 import FeachersSection from './Feacherssection/FeachersSection'
 import GallerySection from './Gallerysection/GallerySection'
+import FooterSection from './Footer/Footer'
 
 function Landingpage() {
     return (
@@ -13,6 +14,7 @@ function Landingpage() {
             <AboutSection />
             <FeachersSection />
             <GallerySection />
+            <FooterSection />
         </>
     )
 }

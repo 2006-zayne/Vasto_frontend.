@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var(--sans);
 }
 :root {
   --text: #6b6375;
@@ -68,4 +67,6 @@
     filter: invert(1) brightness(2);
   }
 }
-
+body{
+  font-family: var(--sans);
+}
