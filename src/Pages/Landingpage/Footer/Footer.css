@@ -212,7 +212,7 @@
   letter-spacing: .02em;
   line-height: .85;
   white-space: nowrap;
-  background: linear-gradient(180deg, rgba(46, 63, 255, 0.911), rgba(90, 169, 239, 0.126));
+  background: var(--mobile-footer-logo);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

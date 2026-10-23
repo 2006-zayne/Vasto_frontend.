@@ -19,6 +19,7 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --nav-bg-sld: rgba(255, 255, 255, 0.919);
   --new-shadow:rgba(216, 217, 218, 0.313);
+  --mobile-footer-logo:linear-gradient(180deg, rgba(46, 63, 255, 0.911), rgba(90, 169, 239, 0.126));
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
   
@@ -54,6 +55,7 @@
     --social-bg: rgba(47, 48, 58, 0.5);
     --nav-bg-sld: rgba(7, 11, 25, 0.837);
     --herro-logo: rgb(70, 93, 175);
+    --mobile-footer-logo:linear-gradient(180deg, rgba(116, 99, 132, 0.911), rgba(157, 180, 200, 0.093));
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
     --nav-bg: #cdcfe5c0;
