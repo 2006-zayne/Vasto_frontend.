@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigationbar from './Navigationbar/Nav'
+import Navigationbar from '../../components/Navigationbar/Nav'
 import HerroSection from './Herrosection/HerroSection'
 import AboutSection from './Aboutsection/AboutSection'
 import FeachersSection from './Feacherssection/FeachersSection'
