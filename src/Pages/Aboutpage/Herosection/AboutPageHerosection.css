@@ -24,3 +24,30 @@
 .about-page-hero-container p{
     font-size: clamp(2rem, 5vw, 4rem);
 }
+
+/*-----------------------------------
+-------- MOBILE RESPONSIVE ----------
+-------------------------------------*/
+.mobile-about-page-hero-section{
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-about-page-hero-container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.mobile-about-page-hero-container h1{
+    font-size: clamp(1rem, 20vw, 10rem);
+}
+.mobile-about-page-hero-container h2{
+    font-size: clamp(1rem, 24vw, 10rem);
+}
+.mobile-about-page-hero-container p{
+    font-size: clamp(1rem, 5vw,  9rem);
+}
