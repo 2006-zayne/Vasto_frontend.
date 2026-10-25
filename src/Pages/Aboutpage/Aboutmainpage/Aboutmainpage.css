@@ -1,0 +1,31 @@
+.about-page-main-section{
+    width: 100%;
+    position: relative;
+}
+.about-page-main-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+.img-scroll-animation-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-scroll-animation-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.about-page-content-container{
+    height: auto;
+  
+}
+
