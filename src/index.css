@@ -71,4 +71,5 @@
 }
 body{
   font-family: var(--sans);
+  cursor: url('/cursor.jpeg'), auto;
 }
