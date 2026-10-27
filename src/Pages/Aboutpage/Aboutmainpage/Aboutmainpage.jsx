@@ -62,12 +62,43 @@ function DeaktopAnimationScroll(){
 }
 
 function DesktopTextScrollAnimation(){
+
+    const textContainer = useRef(null)
+
+    useGSAP(()=>{
+
+        gsap.from(".how-it-started",{
+            y:400,
+            opacity:0,
+            scrollTrigger:{
+                trigger:".how-it-started",
+                start:"top 90%",
+                end:"top 50%",
+                markers:false,
+                scrub:1
+            }
+        })
+
+        gsap.from(".how-it-started-paragraph",{
+            x:250,
+            opacity:0,
+            scrollTrigger:{
+                trigger:".how-it-started-paragraph",
+                start:"top 80%",
+                end:"top 50%",
+                markers:false,
+                scrub:1
+            }
+        })
+
+    },{scope:textContainer})
+
     return(
         <>
-        <div className="about-animation-text-container">
+        <div ref={textContainer} className="about-animation-text-container">
             <div className="first-About-story-container">
-                <h3 className="Desktop-About-Text-Section">HOW IT STARTED</h3>
-                <p>
+                <h3 className="Desktop-About-Text-Section how-it-started">HOW IT STARTED</h3>
+                <p className="how-it-started-paragraph" >
                     Vasto was formerly known as Pwaninet. The service domain (pwaninet.app), 
                     app identifiers, and technical references may still use the previous name; 
                     they refer to the same service.
