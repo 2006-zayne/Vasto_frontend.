@@ -39,7 +39,7 @@ function MobileNav(){
             <div className="mobile-nav-icon">
                 <div className="logo">
                     <img src={img} alt="logo" />
-                    <h2>Vasto</h2>
+                    <h2 className="font-bold">Vasto</h2>
                 </div>
                 <FontAwesomeIcon icon={faBars} onClick={slidefrom} className="nav-icon" />
             </div>
@@ -66,7 +66,7 @@ function DesktopNav(){
             <div className="desktop-nav-icon">
                 <div className="desktop-logo">
                     <img src={img} alt="logo" />
-                    <h2>Vasto</h2>
+                    <h2 className="font-bold">Vasto</h2>
                 </div>
                 <div className="desktop-link">
                     <Link className='link desktop--link' to='/'>

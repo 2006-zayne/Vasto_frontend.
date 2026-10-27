@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Landingpage from './Pages/Landingpage/Landingpage'
 import AboutPage from './Pages/Aboutpage/Aboutpage'
+import FeaturesPage from './Pages/Featurs/Features'
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Landingpage />} />
           <Route path='/about' element={<AboutPage/>} />
+          <Route path='/features' element={<FeaturesPage />} />
         </Routes>
       </BrowserRouter>
     </>

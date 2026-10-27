@@ -121,7 +121,7 @@ function DesktopTextScrollAnimation(){
         <>
         <div ref={textContainer} className="about-animation-text-container">
             <div className="first-About-story-container">
-                <h3 className="Desktop-About-Text-Section how-it-started">HOW IT STARTED</h3>
+                <h3 className="Desktop-About-Text-Section font-bold how-it-started">HOW IT STARTED</h3>
                 <p className="how-it-started-paragraph" >
                     Vasto was formerly known as Pwaninet. The service domain (pwaninet.app), 
                     app identifiers, and technical references may still use the previous name; 
@@ -129,7 +129,7 @@ function DesktopTextScrollAnimation(){
                 </p>
             </div>
             <div className="second-story-container">
-                <h3 className="Desktop-About-Text-Section technology-stack">TECHNOLOGY STACK</h3>
+                <h3 className="Desktop-About-Text-Section font-bold technology-stack">TECHNOLOGY STACK</h3>
                 <p className="tech-stack-paragraph">
                     <span>Frameworks:</span> React js and GSAP for dealing with the front end and Django for the app Api. <br /> 
                     <span>Database:</span> PostgreSQL with pgvector 0.3.6 for vector embeddings <br />

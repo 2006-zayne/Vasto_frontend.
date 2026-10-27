@@ -8,7 +8,7 @@ function AboutPageHeroSection(){
         return(
             <section className="about-page-hero-section">
                 <div className="about-page-hero-container">
-                    <h1>VASTO'S</h1>
+                    <h1 className="font-bold">VASTO'S</h1>
                     <h2>STORY</h2>
                     <p>scroll to learn about us</p>
                 </div>
@@ -20,7 +20,7 @@ function AboutPageHeroSection(){
         return(
             <section className="mobile-about-page-hero-section">
                 <div className="mobile-about-page-hero-container">
-                    <h1>VASTO'S</h1>
+                    <h1 className="font-bold">VASTO'S</h1>
                     <h2>STORY</h2>
                     <p>scroll to learn about us</p>
                 </div>
