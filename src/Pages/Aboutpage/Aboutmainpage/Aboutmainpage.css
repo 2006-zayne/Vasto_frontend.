@@ -33,6 +33,7 @@
     width: 100%;
 }
 .about-animation-text-container{
+    color: rgb(188, 199, 238);
     height: 100dvh;
     width: 100%;
     display: flex;
