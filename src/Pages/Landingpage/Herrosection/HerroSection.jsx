@@ -38,7 +38,7 @@ function ImgSide(){
         <div className="img-container">
             <img src={img} alt="Herro" className='phone' />
             <div className="lable">
-                <h1>VASTO</h1>
+                <h1 className='font-bold'>VASTO</h1>
             </div>
         </div>
         </>

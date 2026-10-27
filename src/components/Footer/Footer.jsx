@@ -11,7 +11,7 @@ function FooterSection(){
             <section className="footer--section">
                 <div className="footer-content-container">
                     <div className="footer-logo">
-                        <h1 className="dskt-logo-footer">VASTO</h1>
+                        <h1 className="dskt-logo-footer font-bold">VASTO</h1>
                         <p>community, learning-resource, opotunity, growth and platform for students</p>
                     </div>
                     <div className="contact-section">
@@ -46,7 +46,7 @@ function FooterSection(){
             <section className="mobile-footer-section">
                 <div className="text-mobile-footer-container">
                     <div className="footer-logo">
-                        <h2>VASTO</h2>
+                        <h2 className="font-bold">VASTO</h2>
                         <p>community, learning-resource, opotunity growth and platform for students</p>
                     </div>
                     <div className="mobile-footer-contact-container">
