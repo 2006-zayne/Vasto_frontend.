@@ -6,6 +6,7 @@
   padding: 0;
 }
 :root {
+  --opposite: rgba(10, 10, 46, 0.172);
   --text: #6b6375;
   --text-h: #001684;
   --herro-logo: #001684;
@@ -44,6 +45,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --opposite: #ffffff;
     --text: #9ca3af;
     --text-h: #f3f4f6;
     --bg: #16171d;

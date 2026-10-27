@@ -157,13 +157,61 @@ function DeaktopAboutMainPage(){
     )
 }
 
+function MobileAboutPage(){
+
+    const slideContainertext = useRef(null)
+
+    useGSAP(()=>{
+
+        gsap.from(".mobile-responsive-about-container",{
+            x:"-100%",
+            scrollTrigger:{
+                trigger:".mobile-responsive-about-container",
+                start:"top 5%",
+                end:"top -100%",
+                markers:false,
+                scrub:1,
+                pin:true
+            }
+        })
+
+    },{scope:slideContainertext})
+
+    return(
+        <>
+        <section ref={slideContainertext} className="mobile-reponsive-about-section">
+            <div className="mobile-responsive-about-container">
+                <div className="mobile-about-howit-began">
+                    <h1>OUR TECH STACK</h1>
+                    <p>
+                        <span>Frameworks:</span> React js and GSAP for dealing with the front end and Django for the app Api. <br /> 
+                        <span>Database:</span> PostgreSQL with pgvector 0.3.6 for vector embeddings. <br />
+                        <span>Cache:</span> Redis (with local memory fallback).
+                    </p>
+                </div>
+                <div className="mobile-about-howit-began margin-of-next-card">
+                    <h1>HOW IT BEGAN</h1>
+                    <p>
+                        Vasto was formerly known as Pwaninet. The service domain (pwaninet.app), 
+                        app identifiers, and technical references may still use the previous name; 
+                        they refer to the same service.
+                    </p>
+                </div>
+            </div>
+        </section>
+        </>
+    )
+}
+
 
 function AboutMainPage(){
     const Desktop = useMediaQuery({query:'(min-width: 1224px)'})
+    const Mobile = useMediaQuery({query:'(max-width: 1224px)'})
 
     return(
         <>
         { Desktop && <DeaktopAboutMainPage /> }
+        { Mobile && <MobileAboutPage />}
         </>
     )
 }
