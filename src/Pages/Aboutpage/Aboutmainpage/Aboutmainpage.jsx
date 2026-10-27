@@ -91,6 +91,30 @@ function DesktopTextScrollAnimation(){
             }
         })
 
+        gsap.from(".technology-stack",{
+            y:400,
+            opacity:0,
+            scrollTrigger:{
+                trigger:".technology-stack",
+                start:"top 90%",
+                end:"top 50%",
+                markers:false,
+                scrub:1
+            }
+        })
+
+        gsap.from(".tech-stack-paragraph",{
+            x:250,
+            opacity:0,
+            scrollTrigger:{
+                trigger:".tech-stack-paragraph",
+                start:"top 80%",
+                end:"top 50%",
+                markers:false,
+                scrub:1
+            }
+        })
+
     },{scope:textContainer})
 
     return(
@@ -105,9 +129,9 @@ function DesktopTextScrollAnimation(){
                 </p>
             </div>
             <div className="second-story-container">
-                <h3 className="Desktop-About-Text-Section">TECHNOLOGY STACK</h3>
-                <p>
-                    <span>Frameworks:</span> React js for dealing with the front end and Django for the app Api. <br /> 
+                <h3 className="Desktop-About-Text-Section technology-stack">TECHNOLOGY STACK</h3>
+                <p className="tech-stack-paragraph">
+                    <span>Frameworks:</span> React js and GSAP for dealing with the front end and Django for the app Api. <br /> 
                     <span>Database:</span> PostgreSQL with pgvector 0.3.6 for vector embeddings <br />
                     <span>Cache:</span> Redis (with local memory fallback)
                 </p>

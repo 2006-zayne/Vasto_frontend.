@@ -5,6 +5,7 @@
 .about-page-main-container{
     height: 100%;
     width: 100%;
+    overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
@@ -13,12 +14,11 @@
     gap: 0px;
 }
 .img-scroll-animation-container{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: 100dvh;
+    width: 100dvw;
     position: relative;
 }
-.img-scroll-animation-container img{
+.scroll-about-page-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -36,7 +36,7 @@
     height: 100dvh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 60%;
@@ -61,7 +61,8 @@
     overflow: hidden;
 }
 .second-story-container{
-    width: 85%;
+    width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
