@@ -1,4 +1,4 @@
-import { React, useRef } from 'react'
+import { React } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
@@ -7,13 +7,13 @@ import CardJsonData from './FeaturesData'
 function MobileCard({img, header, text}){
     return(
         <>
-        <div className='w-[8cm] flex justify-end items-center flex-col relative rounded-2xl'>
+        <div className='w-[8cm] flex justify-end items-center flex-col relative rounded-2xl shadow-[0px_0px_7px_3px_rgba(239,240,240,0.65)]'>
             <img src={img} alt="card" srcset="" width="100%" className='rounded-2xl'/>
-            <div className='h-70 hover:h-full transition-all w-full flex justify-center items-center gap-7
+            <div className='group h-50 hover:h-full transition-all w-full flex justify-center items-center gap-7
             flex-col absolute z-10 text-blue-50 bg-[#081026df] rounded-2xl'>
-                <h1 className='text-3xl'><FontAwesomeIcon icon={faArrowUp} /></h1>
+                <h1 className='text-3xl group-hover:rotate-180 transition-transform duration-400'><FontAwesomeIcon icon={faArrowUp} /></h1>
                 <h2 className='text-4xl font-bold'>{header}</h2>
-                <p className='text-center'>{text}</p>
+                <p className='text-center hidden group-hover:block transition-all duration-450'>{text}</p>
             </div> 
         </div>
         </>
@@ -25,7 +25,7 @@ function MobileContent(){
     return(
         <>
         <section className='h-auto w-dvw py-15'>
-            <div className='h-auto w-full flex justify-center items-center flex-wrap flex-row gap-10'>
+            <div className='h-auto w-full flex justify-center items-center flex-wrap flex-row gap-20'>
                 {
                     cardData.DivOne.map((element)=>(
                         <MobileCard 
