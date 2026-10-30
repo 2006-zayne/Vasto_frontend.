@@ -20,7 +20,7 @@ function Text(){
                  </p>
             </div>
             <div className="herro-actions">
-                <Link className='get-started-link' to="/login">
+                <Link className='get-started-link' to="/vasto">
                     <Buttons name="Get Started" type="link-btn"/>
                 </Link>
                 <Link className='get-started-link' to="/download">
